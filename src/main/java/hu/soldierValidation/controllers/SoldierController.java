@@ -26,7 +26,7 @@ public class SoldierController {
         return service.getSoldiers();
     }
 
-    @GetMapping("/id")
+    @GetMapping("/{id}")
     public Soldier getSoldier(@PathVariable("id")int id){
         return service.getSoldier(id);
     }
