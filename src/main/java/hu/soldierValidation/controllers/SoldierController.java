@@ -49,6 +49,6 @@ public class SoldierController {
     }
     @DeleteMapping("/{id}")
     public void deleteSoldier(@PathVariable("id")int id){
-        service.deleteRepository(id);
+        service.deleteSoldier(id);
     }
 }
